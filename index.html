@@ -18,24 +18,37 @@
 
   <body>
     <header>
-      <a href="#"><img src="/assets/images/logo.svg" alt="logo" /></a>
-      <nav>
-        <ul>
-          <li><a class="nav-link" href="#">Home</a></li>
-          <li><a class="nav-link" href="#">New</a></li>
-          <li><a class="nav-link" href="#">Popular</a></li>
-          <li><a class="nav-link" href="#">Trending</a></li>
-          <li><a class="nav-link" href="#">Categories</a></li>
-        </ul>
-      </nav>
+      <a href="#"><img src="/assets/images/logo.svg" alt="logo" /></a>     
+      <div class="desktop-nav">
+        <nav>
+          <ul>
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">New</a></li>
+            <li><a class="nav-link" href="#">Popular</a></li>
+            <li><a class="nav-link" href="#">Trending</a></li>
+            <li><a class="nav-link" href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobil-nav">
+        <img src="/assets/images/icon-menu.svg" alt="" />
+      </div>
     </header>
 
     <main>
       <div class="flex-contianer">
         <section class="hero-container">
           <div>
-            <img id="hero-desktop-img" src="/assets/images/image-web-3-desktop.jpg" alt="hero-desktop-img" />
-            <img id="hero-mobile-img" src="/assets/images/image-web-3-mobile.jpg" alt="hero-mobile-img">
+            <img
+              id="hero-mobile-img"
+              src="/assets/images/image-web-3-mobile.jpg"
+              alt="hero-mobile-img"
+            />
+            <img
+              id="hero-mobile-desktop"
+              src="/assets/images/image-web-3-desktop.jpg"
+              alt="hero-mobile-desktop"
+            />
           </div>
           <div>
             <p class="h1">The Bright Future of Web 3.0?</p>
@@ -79,7 +92,9 @@
           <div class="artical-info">
             <p class="articals-nr">01</p>
             <p class="articals-h4">Reviving Retro PCs</p>
-            <p>What happens when old PCs are given modern upgrades?</p>
+            <p class="p">
+              What happens when old PCs are given modern upgrades?
+            </p>
           </div>
         </div>
         <div>
@@ -90,7 +105,7 @@
           <div class="artical-info">
             <p class="articals-nr">02</p>
             <p class="articals-h4">Top 10 Laptops of 2022</p>
-            <p>Our best picks for various needs and budgets.</p>
+            <p class="p">Our best picks for various needs and budgets.</p>
           </div>
         </div>
         <div>
