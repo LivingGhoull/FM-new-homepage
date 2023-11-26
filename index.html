@@ -10,16 +10,17 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="/assets/images/favicon-32x32.png"
     />
+    <script defer src="/Mobil-nav.js"></script>
 
     <title>Frontend Mentor | News homepage</title>
   </head>
 
   <body>
     <header>
-      <a href="#"><img src="/assets/images/logo.svg" alt="logo" /></a>     
-      <div class="desktop-nav">
+      <a href="#"><img src="/logo.svg" alt="Logo" /></a>
+      <div id="desktop-nav">
         <nav>
           <ul>
             <li><a class="nav-link" href="#">Home</a></li>
@@ -30,14 +31,26 @@
           </ul>
         </nav>
       </div>
-      <div class="mobil-nav">
-        <img src="/assets/images/icon-menu.svg" alt="" />
+
+      <img id="mobil-icon" src="/icon-menu.svg" alt="Navigation Menu Icon" />
+
+      <div id="mobil-nav">
+        <nav>
+          <ul>
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">New</a></li>
+            <li><a class="nav-link" href="#">Popular</a></li>
+            <li><a class="nav-link" href="#">Trending</a></li>
+            <li><a class="nav-link" href="#">Categories</a></li>
+          </ul>
+        </nav>
       </div>
+
     </header>
 
     <main>
-      <div class="flex-contianer">
-        <section class="hero-container">
+      <div id="flex-contianer">
+        <section id="hero-container">
           <div>
             <img
               id="hero-mobile-img"
@@ -51,15 +64,15 @@
             />
           </div>
           <div>
-            <p class="h1">The Bright Future of Web 3.0?</p>
+            <p class="hero-title">The Bright Future of Web 3.0?</p>
           </div>
           <div>
-            <p class="p">
+            <p class="text">
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <button class="btn">READ MORE</button>
+            <button type="button" class="btn">READ MORE</button>
           </div>
         </section>
 
@@ -67,18 +80,20 @@
           <p class="new-h1">New</p>
           <div class="new-artical">
             <a href="#" class="new-a">Hydrogen VS Electric Cars</a>
-            <p class="new-p">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <p class="new-p text">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
           </div>
           <div class="new-artical">
             <a href="#" class="new-a">The Downsides of AI Artistry</a>
-            <p class="new-p">
+            <p class="new-p text">
               What are the possible adverse effects of on-demand AI image
               generation?
             </p>
           </div>
           <div class="new-artical">
             <a href="#" class="new-a">Is VC Funding Drying Up?</a>
-            <p class="new-p">
+            <p class="new-p text">
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
             </p>
@@ -86,13 +101,13 @@
         </aside>
       </div>
 
-      <section class="articals">
+      <section id="articals">
         <div>
           <img src="/assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
           <div class="artical-info">
             <p class="articals-nr">01</p>
-            <p class="articals-h4">Reviving Retro PCs</p>
-            <p class="p">
+            <p class="articals-title">Reviving Retro PCs</p>
+            <p class="text">
               What happens when old PCs are given modern upgrades?
             </p>
           </div>
@@ -104,8 +119,8 @@
           />
           <div class="artical-info">
             <p class="articals-nr">02</p>
-            <p class="articals-h4">Top 10 Laptops of 2022</p>
-            <p class="p">Our best picks for various needs and budgets.</p>
+            <p class="articals-title">Top 10 Laptops of 2022</p>
+            <p class="text">Our best picks for various needs and budgets.</p>
           </div>
         </div>
         <div>
@@ -115,7 +130,7 @@
           />
           <div class="artical-info">
             <p class="articals-nr">03</p>
-            <p class="articals-h4">The Growth of Gaming</p>
+            <p class="articals-title">The Growth of Gaming</p>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </div>
         </div>
