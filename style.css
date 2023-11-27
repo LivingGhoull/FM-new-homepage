@@ -95,7 +95,7 @@ body {
   color: var(--grayish-blue);
 }
 
-.articals-h4 {
+.articals-title {
   margin: 1rem 0;
   font-size: 18px;
   font-weight: var(--fw-700);
