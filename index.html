@@ -154,7 +154,7 @@
     console.log('clciked');
     
     const currentImg = navIcon.src.split('/')[navIcon.src.split('/').length - 1]
-    navIcon.src = `/${currentImg}` === imgOpen ? imgClosed : imgOpen;
+    navIcon.src = `public/${currentImg}` === imgOpen ? imgClosed : imgOpen;
 
     mobilNav.classList.toggle('open')
 };
